@@ -101,12 +101,60 @@
 
 <h1>:chart_with_upwards_trend: Resultados Financeiros para o Negócio </h1>
 
+<p> 
+1. Quem são as pessoas elegíveis para participar do programa de Insiders?
+ 
+- Foi gerado um arquivo csv com o ID de todos os clientes do cluester insiders. </p>
+
+<p> 
+2. Quantos clientes farão parte do grupo?
+ 
+- 543 clientes. </p>
+
+<p> 
+3. Quais as principais características desses clientes?
+ 
+- São 543 clientes que representam 9,53% da base, que trazem um faturamento médio de $8487,32. Compraram em média 277 produtos que totalizam 4917 itens na média e com um ticket médio de $243. </p>
+
+<p> 
+4. Qual a porcentagem de contribuição do faturamento, vinda do Insiders?
+ 
+- O cluster Insiders contribui com 45,61% do faturamento total. </p>
+
+<p> 
+5. Quais as condições para uma pessoa ser elegível ao Insiders?
+ 
+- Ter um valor igual ou superar ao segundo quartil do cluster Insiders em todas as variáveis. </p>
+
+<p> 
+6. Quais as condições para uma pessoa ser removida do Insiders?
+ 
+- Ter um valor abaixo do menor valor possível em alguma das variáveis do cluster Insiders. </p>
+
+<p> 
+7. Qual a garantia que o programa Insiders é melhor que o restante da base?
+ 
+- Apesar de haver 7 clusters, apenas o Insiders detém quase metade de todo a faturamento da empresa, comrpovando que é um grupo com impacto altíssimo na receita da empresa. </p>
+
+<p> A tabela a seguir mostra os valores médios para cada uma das variáveis e para cada um dos clusters encontrados: </p>
+
+![tabela clusters](https://github.com/JeffersonMedines/loyalty_program/assets/93053350/d1335891-d420-45ad-8362-7a33d55610dc)
 
 
 <h1>:hammer_and_wrench: Deploy do Modelo em Produção </h1>
 
+<p> De acordo com as boas práticas, inicialmente montei a estrutura de deploy de forma local para garantir que todas as peças estavam funcionando, após isso comecei a migrar cada peça para o ambiente remoto. O ambiente remoto foi desenvolvido utilizando as ferramentas da cloud AWS. </p>
 
+<p> Na estrutura local o notebook de deploy salvo no meu computador pega o arquivo csv com os dados dentro de uma pasta do meu computador e realiza todo o pipeline para a clusterização, após isso salva em um banco de dados sqlite que é consumido por uma visualização em outro notebook salvo no meu computador. </p>
+
+<p> Na migração para o ambiente remoto, iniciei criando um banco de dados postgres com o serviço RDS da AWS que é onde serão salvos os dados da clusterização. Depois usando o EC2 criei uma instância de servidor para executar o notebook do modelo, criei todo o ambiente virtual na instância e configurei ela para que fosse possível funcionar a automatização do deploy. </p>
+
+<p> Em seguida criei um bucket no S3 para armazenar o arquivo .csv com os dados para o notebook consumir. E finalmente, conectei o metabase com o RDS para consumir os dados clusterizados e criar a visualização para o time de marketing. </p>
+
+<p> Então o fluxo de deploy ficou: O notebook na EC2 checa o github para ver se tem uma nova versão de código enviada pelo notebook local, após isso carrega o dataset salvo no S3 e executa o pipeline do modelo, salva os dados clusterizados no postgres do RDS e então o metabase consome esses dados para criar a visualização. A seguir a estrutura do deploy: </p>
+
+![estrutura deploy metabase](https://github.com/JeffersonMedines/loyalty_program/assets/93053350/d91c97c4-07a1-4570-acf1-d120ac280db2)
 
 <h1>:pushpin: Próximos Passos </h1>
 
-<p>  </p>
+<p> Fazer testes com a aplicação dos embedding em diferentes dimensionalidades para ver se a organização dos dados irá aumentar já que nesse ciclo do crisp apenas foram testados embedding em duas dimensões. </p>
