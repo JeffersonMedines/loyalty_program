@@ -49,6 +49,10 @@
 
 7. Qual a garantia que o programa Insiders é melhor que o restante da base?</p>
 
+<p>
+<a href="https://github.com/JeffersonMedines/loyalty_program#-%C3%ADndice-">Voltar ao topo</a>
+</p>
+
 <h1>:computer: Planejamento da Solução </h1>
 
 <p> Este projeto será desenvolvido com base no Processo Padrão Inter-Indústrias para Mineração de Dados (CRISP-DM). Uma metodologia padronizada de projetos de ciência de dados com etapas bem definidas e ordenadas: entendimento do negócio, entendimento dos dados, prepração dos dados, modelagem, avaliação e implementação. Dessa forma, quando utilizamos a metodologia CRIPS-DM, o projeto de ciência de dados passa a ter um ciclo de vida circular. Mesmo quando o projeto chega na etapa de implementação, o projeto pode ser novamente iniciado pela etapa de entendimento do negócio. </p>
@@ -59,6 +63,9 @@
 
 ![crisp dm](https://user-images.githubusercontent.com/93053350/208129563-6f933191-f522-4603-bf98-06b3f0db9937.jpg)
 
+<p>
+<a href="https://github.com/JeffersonMedines/loyalty_program#-%C3%ADndice-">Voltar ao topo</a>
+</p>
 
 <h1>:bar_chart: Top 3 Insights de Negócio</h1>
 <h3> 1. Os clientes do cluster Insiders possuem um volume de produtos acima de 15% do total da base. </h3>
@@ -79,6 +86,10 @@
 
 ![GRAFICO3](https://github.com/JeffersonMedines/loyalty_program/assets/93053350/ba8702e8-9892-43b2-b676-68f703d73c8e)
 
+<p>
+<a href="https://github.com/JeffersonMedines/loyalty_program#-%C3%ADndice-">Voltar ao topo</a>
+</p>
+
 <h1>:mechanical_arm: Machine Learning e Métricas de Performance </h1>
 
 <p> O objetivo de um projeto de clusterização é agrupar os dados de forma organizada, por exemplo, no atual projeto queremos organizar os consumidores em grupos para descobrir quais são os clientes mais valiosos e a partir desses grupos, pensar em ações para aumentar o faturamento da empresa criando um programa de fidelidade para os clientes mais valiosos por exemplo. </p>
@@ -98,6 +109,10 @@
 <p> Finalmente, essa é uma visualização como ficou a organização dos clusters dentro do espaço de embedding: </p>
 
 ![cluterizado](https://github.com/JeffersonMedines/loyalty_program/assets/93053350/ccbbbf9c-c8a8-4c5d-aae5-0807fb0acc20)
+
+<p>
+<a href="https://github.com/JeffersonMedines/loyalty_program#-%C3%ADndice-">Voltar ao topo</a>
+</p>
 
 <h1>:chart_with_upwards_trend: Resultados Financeiros para o Negócio </h1>
 
@@ -140,6 +155,9 @@
 
 ![tabela clusters](https://github.com/JeffersonMedines/loyalty_program/assets/93053350/d1335891-d420-45ad-8362-7a33d55610dc)
 
+<p>
+<a href="https://github.com/JeffersonMedines/loyalty_program#-%C3%ADndice-">Voltar ao topo</a>
+</p>
 
 <h1>:hammer_and_wrench: Deploy do Modelo em Produção </h1>
 
@@ -154,6 +172,10 @@
 <p> Então o fluxo de deploy ficou: O notebook na EC2 checa o github para ver se tem uma nova versão de código enviada pelo notebook local, após isso carrega o dataset salvo no S3 e executa o pipeline do modelo, salva os dados clusterizados no postgres do RDS e então o metabase consome esses dados para criar a visualização. A seguir a estrutura do deploy: </p>
 
 ![estrutura deploy metabase](https://github.com/JeffersonMedines/loyalty_program/assets/93053350/d91c97c4-07a1-4570-acf1-d120ac280db2)
+
+<p>
+<a href="https://github.com/JeffersonMedines/loyalty_program#-%C3%ADndice-">Voltar ao topo</a>
+</p>
 
 <h1>:pushpin: Próximos Passos </h1>
 
