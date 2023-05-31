@@ -160,5 +160,5 @@
 <p> Fazer testes com a aplicação dos embedding em diferentes dimensionalidades para ver se a organização dos dados irá aumentar já que nesse ciclo do crisp apenas foram testados embedding em duas dimensões. </p>
 
 <p>
- • [Voltar ao topo.](https://github.com/JeffersonMedines/loyalty_program#insiders-loyalty-program)
+<a href="https://github.com/JeffersonMedines/loyalty_program#-%C3%ADndice-">Voltar ao topo</a>
 </p>
