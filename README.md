@@ -149,11 +149,11 @@
 <p> 
 7. Qual a garantia que o programa Insiders é melhor que o restante da base?
  
-- Apesar de haver 7 clusters, apenas o Insiders detém quase metade de todo a faturamento da empresa, comrpovando que é um grupo com impacto altíssimo na receita da empresa. </p>
+- Apesar de haver 7 clusters, apenas o Insiders detém quase metade de todo a faturamento da empresa, comprovando que é um grupo com impacto altíssimo na receita da empresa. </p>
 
-<p> A tabela a seguir mostra os valores médios para cada uma das variáveis e para cada um dos clusters encontrados: </p>
+<p> O dashboard a seguir mostra os valores médios para cada uma das variáveis e para cada um dos clusters encontrados, seguimentando o perfil dos clientes: </p>
 
-![tabela clusters](https://github.com/JeffersonMedines/loyalty_program/assets/93053350/d1335891-d420-45ad-8362-7a33d55610dc)
+![programa insiders](https://github.com/JeffersonMedines/loyalty_program/assets/93053350/e559190c-a7db-4db4-94ef-1f91c8572b09)
 
 <p>
 <a href="https://github.com/JeffersonMedines/loyalty_program#-%C3%ADndice-">Voltar ao topo</a>
